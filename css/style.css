@@ -12,19 +12,20 @@
   --titleFont: Comfortaa;
 }
 
+html {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .bg-primary {
   background-color: var(--mainColor) !important;
 }
-
-.bg-secondary {
-  background-color: var(--secondaryColor) !important;
-}
-
 
 body {
   color: var(--mainColor);
   font-family: var(--coreFont), var(--titleFont), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   line-height: 1.5;
+  transition: flex-basis 900ms linear; /* Check whether this is doing what I want it to do */
 }
 
 #body .nav-link:hover {
@@ -198,6 +199,15 @@ body {
 
 a:hover {
   text-decoration: none;
+}
+
+/* Media query to change styling of titles in aside for no border right, add border bottom, and align text left */
+@media only screen and (max-width: 991px) {
+  #body .nav-link:hover {
+    width: 10%;
+    padding-left: 5px;
+  }
+
 }
 
 /* Media query to change styling of titles in aside for no border right, add border bottom, and align text left */
