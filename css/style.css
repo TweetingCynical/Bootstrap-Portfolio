@@ -146,7 +146,10 @@ body {
   box-shadow: 
       inset 0px 0px 20px var(--secondaryColor), 
       0 0 20px var(--secondaryColor);
+  transition: all 0.5s ease-in-out;
 }
+
+
 
 .workHeadline {
   background: var(--secondaryColor);
@@ -156,7 +159,6 @@ body {
   width: 40%;
   padding: 10px;
 }
-
 
 /* Styling for when user hovers over a work display image.
   Effectively overrides previous setting of linear gradient to give the illusion that the image is lighting up*/
@@ -180,7 +182,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  cursor: pointer;
 }
 
 .row {
@@ -189,4 +190,25 @@ body {
 
 .col-md-8, .col-lg-8, .col-md-4, .col-lg-4, .col-md-7, .col-lg-7, .col-md-5, .col-lg-5{
   padding: 0;
+}
+
+.contactBar a {
+  color: var(--secondaryColor);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Media query to change styling of titles in aside for no border right, add border bottom, and align text left */
+@media only screen and (max-width: 767px) {
+  #about, #work, #contact {
+    border-bottom: 1px solid var(--mainColor);
+    text-align: left !important;
+  }
+
+  .border-right {
+    border-right: 0px solid var(--mainColor) !important;
+  }
+
 }
