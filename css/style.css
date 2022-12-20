@@ -41,6 +41,7 @@ html {
 /* Needed to override Bootstrap settings for column and row margin and padding */
   .row {
     margin-left: -10px;
+    margin-right: -10px;
   }
 
   .col-md-8, .col-lg-8, .col-md-4, .col-lg-4, .col-md-7, .col-lg-7, .col-md-5, .col-lg-5{
