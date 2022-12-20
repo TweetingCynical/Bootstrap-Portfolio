@@ -131,26 +131,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 250px;
+  min-height: 200px;
   margin: 5px;
-}
-
-/* #titleAbout, #titleWork, #titleContact {
-  margin: 5px;
-  padding: 0 20px 0 0;
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 20px;
 }
 
-#titleAbout h3, #titleWork h3, #titleContact h3 {
-  color: var(--mainColor);
+#imageA, #imageB {
+  min-height: 350px;
 }
 
-#displayAbout, #displayContact {
-  border: 5px solid white;
-}
-
-.gridWorkDisplay:hover {
+#imageA:hover, #imageB:hover, #imageC:hover, #imageD:hover {
   box-shadow: 
       inset 0px 0px 20px var(--secondaryColor), 
       0 0 20px var(--secondaryColor);
@@ -159,10 +151,12 @@ body {
 .workHeadline {
   background: var(--secondaryColor);
   color: var(--white);
-  min-width: 240px;
+  min-width:200px;
+  height: 100px;
   width: 40%;
   padding: 10px;
-} */
+}
+
 
 /* Styling for when user hovers over a work display image.
   Effectively overrides previous setting of linear gradient to give the illusion that the image is lighting up*/
@@ -193,6 +187,6 @@ body {
   margin-left: -10px;
 }
 
-.col-md-8, .col-lg-8, .col-md-4, .col-lg-4 {
+.col-md-8, .col-lg-8, .col-md-4, .col-lg-4, .col-md-7, .col-lg-7, .col-md-5, .col-lg-5{
   padding: 0;
 }
