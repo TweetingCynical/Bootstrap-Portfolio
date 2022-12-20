@@ -1,0 +1,66 @@
+/* Import two fonts from Google api */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* Store colours and fonts for use sitewide */
+:root {
+  --mainColor: #3C1934;
+  --accentColor: #4F3E59;
+  --secondaryColor: #AA3619;
+  --white: white;
+  --coreFont: Montserrat;
+  --titleFont: Comfortaa;
+}
+
+.bg-primary {
+  background-color: var(--mainColor) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondaryColor) !important;
+}
+
+
+body {
+  color: var(--mainColor);
+  font-family: var(--coreFont), var(--titleFont), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  line-height: 1.5;
+}
+
+#body .nav-link:hover {
+  background: #AA3619;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+#logoImg {
+  border: 5px solid var(--white); 
+  max-height: 90px;
+}
+
+/* Add an image outline with transition effect when user hovers over logo */
+#logoImg:hover {
+  outline: 6px solid var(--secondaryColor);
+  outline-offset: -5px;
+  transition: all 0.5s ease-in-out;
+}
+
+#pageTitle {
+  width: 300px;
+  background: var(--secondaryColor);
+  padding: 5px;
+  color: var(--white);
+  margin: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--white);
+    background: var(--secondaryColor);
+    padding: 5px;
+    margin: 5px;
+}

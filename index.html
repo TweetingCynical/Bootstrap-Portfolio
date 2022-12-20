@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
   </head>
-  <body>
+  <body id="body">
 
     <!-- Navbar start -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <!-- Name plate on the left -->
-      <a class="navbar-brand" href="#">Turing</a>
+      <h1 id="pageTitle">Turing
+      </h1>
       <!-- Navbar toggler for smaller screens -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,7 +30,7 @@
         </div>
       <!-- Logo image here -->
       <a class="navbar-brand ml-auto" href="#">
-        <img src="./images/headshot.png" width="90" height="90" class="d-inline-block float-right rounded-circle" alt="">
+        <img src="./images/headshot.png" width="90" height="90" class="d-inline-block float-right rounded-circle" id="logoImg" alt="">
       </a>
       </div>
     </nav>
@@ -46,7 +47,7 @@
     <div class="container mx-auto" style="padding: 5px 0px; margin: 0 10px">
       <section class="row" id="about">
         <div class="col-sm-12 col-md-3 col-lg-3" style="background-color: red;">
-          <h3>About</h3>
+          <h3 class="text-right" style="padding: 5px 0 0 0">About</h3>
         </div>
         <div class="col-sm-12 col-md-9 col-lg-9" style="background-color: yellow;">
         </div>
@@ -56,7 +57,7 @@
     <div class="container mx-auto" style="padding: 5px 0px; margin: 0 10px">
       <section class="row">
         <div class="col-sm-12 col-md-3 col-lg-3" style="background-color: red;">
-          <h3>Work</h3>
+          <h3 class="text-right" style="padding: 5px 0 0 0">Work</h3>
         </div>
         <div class="col-sm-12 col-md-9 col-lg-9">
           <!-- Second row containing two columns, one nested -->
@@ -71,12 +72,11 @@
         </div>
       </section>
     </div>
-
     <!-- Contact grid here -->
     <div class="container mx-auto" style="padding: 5px 0px; margin: 0 10px">
       <section class="row" id="about">
         <div class="col-sm-12 col-md-3 col-lg-3" style="background-color: red;">
-          <h3>Contact</h3>
+          <h3 class="text-right" style="padding: 5px 0 0 0">Contact</h3>
         </div>
         <div class="col-sm-12 col-md-9 col-lg-9" style="background-color: yellow;">
         </div>
