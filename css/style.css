@@ -31,8 +31,10 @@ html {
   #body .nav-link:hover {
     background: #AA3619;
     color: white;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
   }
+
+
 
   a:hover {
     text-decoration: none;
@@ -72,12 +74,7 @@ html {
 
 /* Bootstrap framing for hero leader image and headline */
   .jumbotron {
-    padding: 0 !important;
-  }
-
-/* Hero leader image */
-  .hero {
-    width: 100%;
+    padding: 20px !important;
     height: 200px;
     background: linear-gradient( /* Create top layer of semi transparent gradient */
         rgba(79, 62, 89, 0.45), 
@@ -90,18 +87,13 @@ html {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 20px;
   }
 
   /* Overlaid headline on hero image */
-    #heroHeadline {
-      display: flex;
-      align-items: center;
-      position: relative;
-      height: 60px;
-      padding: 20px;
+    .heroHeadline {
+      padding: 10px 10px 0 10px;
       background-color: var(--secondaryColor);
-      color: var(--white);
+      text-align: right;
     }
 
 /* Grid specific border settings */
@@ -145,11 +137,8 @@ html {
 
   .workHeadline {
     background: var(--secondaryColor);
-    color: var(--white);
-    min-width:200px;
-    height: 100px;
-    width: 40%;
     padding: 10px;
+    text-align: left;
   }
 
 /* For making sure the images inside grid are appropriately sized and centered */
@@ -168,13 +157,7 @@ html {
     min-height: 350px;
   }
 
-/* Hover features on grid images */
-  #imageA:hover, #imageB:hover, #imageC:hover, #imageD:hover {
-    box-shadow: 
-        inset 0px 0px 20px var(--secondaryColor), 
-        0 0 20px var(--secondaryColor);
-    transition: all 0.5s ease-in-out;
-  }
+
 
   /* Styling for when user hovers over a work display image.
     Effectively overrides previous setting of linear gradient to give the illusion that the image is lighting up*/
@@ -194,7 +177,12 @@ html {
     background: url("../images/02-portfolio-3.png");
   }
 
+  /* Hover features on grid images */
   #imageA:hover, #imageB:hover, #imageC:hover, #imageD:hover {
+    box-shadow: 
+        inset 0px 0px 20px var(--secondaryColor), 
+        0 0 20px var(--secondaryColor);
+    transition: all 0.5s ease-in-out;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -207,11 +195,10 @@ html {
 
 /* Media query to change styling of titles in aside for no border right, add border bottom, and align text left */
 @media only screen and (max-width: 991px) {
-  #body .nav-link:hover {
+  .navbar .nav-link:hover {
     width: 10%;
     padding-left: 5px;
   }
-
 }
 
 /* Media query to change styling of titles in aside for no border right, add border bottom, and align text left */
@@ -220,20 +207,16 @@ html {
     border-bottom: 1px solid var(--mainColor);
     text-align: left !important;
   }
-
   .border-right {
     border-right: 0px solid var(--mainColor) !important;
   }
-
 }
 
 /* Media query to change styling of titles */
-@media only screen and (max-width: 500px) {
-  #heroHeadline {
-    font-size: 20px;
-    text-align: right;
+@media only screen and (max-width: 400px) {
+  .heroHeadline h2 {
+    font-size: 18px;
   }
-
   #pageTitle {
     font-size: 20px;
     text-align: left;
