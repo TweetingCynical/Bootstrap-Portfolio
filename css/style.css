@@ -16,192 +16,192 @@ html {
   margin: 0 auto;
 }
 
-.bg-primary {
-  background-color: var(--mainColor) !important;
-}
+/* General override of Bootstrap themes and settings */
+  .bg-primary {
+    background-color: var(--mainColor) !important;
+  }
 
-body {
-  color: var(--mainColor);
-  font-family: var(--coreFont), var(--titleFont), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  line-height: 1.5;
-  transition: flex-basis 900ms linear; /* Check whether this is doing what it is intended to do */
-}
+  body {
+    color: var(--mainColor);
+    font-family: var(--coreFont), var(--titleFont), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    line-height: 1.5;
+    transition: flex-basis 900ms linear; /* Check whether this is doing what it is intended to do */
+  }
 
-#body .nav-link:hover {
-  background: #AA3619;
-  color: white;
-  transition: all 0.5s ease-in-out;
-}
+  #body .nav-link:hover {
+    background: #AA3619;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
 
-#logoImg {
-  border: 5px solid var(--white); 
-  max-height: 90px;
-}
+  a:hover {
+    text-decoration: none;
+  }
 
-/* Add an image outline with transition effect when user hovers over logo */
-#logoImg:hover {
-  outline: 6px solid var(--secondaryColor);
-  outline-offset: -5px;
-  transition: all 0.5s ease-in-out;
-}
+/* Needed to override Bootstrap settings for column and row margin and padding */
+  .row {
+    margin-left: -10px;
+  }
 
-#pageTitle {
-  width: 300px;
-  background: var(--secondaryColor);
-  padding: 5px;
+  .col-md-8, .col-lg-8, .col-md-4, .col-lg-4, .col-md-7, .col-lg-7, .col-md-5, .col-lg-5{
+    padding: 0;
+  }
 
+/* Styling for nav bar pageTitle/image/logo */
+  #pageTitle {
+    width: 300px;
+    background: var(--secondaryColor);
+    padding: 5px;
+    color: var(--white);
+    margin: 5px;
+    font-family: var(--titleFont);
+  }
 
+  #logoImg {
+    border: 5px solid var(--white); 
+    max-height: 90px;
+  }
 
-  color: var(--white);
-  margin: 5px;
-  font-family: var(--titleFont);
-}
+  /* Add an image outline with transition effect when user hovers over logo */
+    #logoImg:hover {
+      outline: 6px solid var(--secondaryColor);
+      outline-offset: -5px;
+      transition: all 0.5s ease-in-out;
+    }
 
-.jumbotron {
-  padding: 0 !important;
-}
+/* Bootstrap framing for hero leader image and headline */
+  .jumbotron {
+    padding: 0 !important;
+  }
 
 /* Hero leader image */
-.hero {
-  width: 100%;
-  height: 200px;
-  background: linear-gradient( /* Create top layer of semi transparent gradient */
-      rgba(79, 62, 89, 0.45), 
-      var(--mainColor)
-  ), 
-  url("../images/02-wireframe.png"); /* Add bottom layer of hero image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 20px;
-}
+  .hero {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient( /* Create top layer of semi transparent gradient */
+        rgba(79, 62, 89, 0.45), 
+        var(--mainColor)
+    ), 
+    url("../images/02-wireframe.png"); /* Add bottom layer of hero image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+  }
 
-/* Overlaid headline on hero image */
-#heroHeadline {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  /* width: 500px; */
-  height: 60px;
-  padding: 20px;
-  background-color: var(--secondaryColor);
-  color: var(--white);
-}
+  /* Overlaid headline on hero image */
+    #heroHeadline {
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 60px;
+      padding: 20px;
+      background-color: var(--secondaryColor);
+      color: var(--white);
+    }
 
-.border-right {
-  border-right: 5px solid var(--mainColor) !important;
-}
+/* Grid specific border settings */
+  .border-right {
+    border-right: 5px solid var(--mainColor) !important;
+  }
 
-.border {
-  border: 5px solid var(--mainColor) !important;
-}
+  .border {
+    border: 5px solid var(--mainColor) !important;
+  }
 
-/* Set background images with linear gradients */
-#imageA {
-  background: linear-gradient( /* Create top layer of semi transparent gradient */
-      rgba(79, 62, 89, 0.45), 
-      var(--mainColor)
-  ), 
-  url("../images/02-portfolio-5.png"); /* Add bottom layer of work display image */
-}
-#imageB {
-  background: linear-gradient( /* Create top layer of semi transparent gradient */
-      rgba(79, 62, 89, 0.45), 
-      var(--mainColor)
-  ), 
-  url("../images/02-portfolio-1.png"); /* Add bottom layer of work display image */
-}
-#imageC {
-  background: linear-gradient( /* Create top layer of semi transparent gradient */
-      rgba(79, 62, 89, 0.45), 
-      var(--mainColor)
-  ), 
-  url("../images/02-portfolio-6.png"); /* Add bottom layer of work display image */
-}
-#imageD {
-  background: linear-gradient( /* Create top layer of semi transparent gradient */
-      rgba(79, 62, 89, 0.45), 
-      var(--mainColor)
-  ), 
-  url("../images/02-portfolio-3.png"); /* Add bottom layer of work display image */
-}
+/* Set grid background images with linear gradients, and add image headline */
+  #imageA {
+    background: linear-gradient( /* Create top layer of semi transparent gradient */
+        rgba(79, 62, 89, 0.45), 
+        var(--mainColor)
+    ), 
+    url("../images/02-portfolio-5.png"); /* Add bottom layer of work display image */
+  }
+  #imageB {
+    background: linear-gradient( /* Create top layer of semi transparent gradient */
+        rgba(79, 62, 89, 0.45), 
+        var(--mainColor)
+    ), 
+    url("../images/02-portfolio-1.png"); /* Add bottom layer of work display image */
+  }
+  #imageC {
+    background: linear-gradient( /* Create top layer of semi transparent gradient */
+        rgba(79, 62, 89, 0.45), 
+        var(--mainColor)
+    ), 
+    url("../images/02-portfolio-6.png"); /* Add bottom layer of work display image */
+  }
+  #imageD {
+    background: linear-gradient( /* Create top layer of semi transparent gradient */
+        rgba(79, 62, 89, 0.45), 
+        var(--mainColor)
+    ), 
+    url("../images/02-portfolio-3.png"); /* Add bottom layer of work display image */
+  }
 
-/* For making sure the images inside work display are appropriately sized and centered */
-#imageA, #imageB, #imageC, #imageD {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 200px;
-  margin: 5px;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 20px;
-}
+  .workHeadline {
+    background: var(--secondaryColor);
+    color: var(--white);
+    min-width:200px;
+    height: 100px;
+    width: 40%;
+    padding: 10px;
+  }
 
-#imageA, #imageB {
-  min-height: 350px;
-}
+/* For making sure the images inside grid are appropriately sized and centered */
+  #imageA, #imageB, #imageC, #imageD {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    margin: 5px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
 
-#imageA:hover, #imageB:hover, #imageC:hover, #imageD:hover {
-  box-shadow: 
-      inset 0px 0px 20px var(--secondaryColor), 
-      0 0 20px var(--secondaryColor);
-  transition: all 0.5s ease-in-out;
-}
+  #imageA, #imageB {
+    min-height: 350px;
+  }
 
+/* Hover features on grid images */
+  #imageA:hover, #imageB:hover, #imageC:hover, #imageD:hover {
+    box-shadow: 
+        inset 0px 0px 20px var(--secondaryColor), 
+        0 0 20px var(--secondaryColor);
+    transition: all 0.5s ease-in-out;
+  }
 
+  /* Styling for when user hovers over a work display image.
+    Effectively overrides previous setting of linear gradient to give the illusion that the image is lighting up*/
+  #imageA:hover {
+    background: url("../images/02-portfolio-5.png");
+  }
 
-.workHeadline {
-  background: var(--secondaryColor);
-  color: var(--white);
-  min-width:200px;
-  height: 100px;
-  width: 40%;
-  padding: 10px;
-}
+  #imageB:hover {
+    background: url("../images/02-portfolio-1.png");
+  }
 
-/* Styling for when user hovers over a work display image.
-  Effectively overrides previous setting of linear gradient to give the illusion that the image is lighting up*/
-#imageA:hover {
-  background: url("../images/02-portfolio-5.png");
-}
+  #imageC:hover {
+    background: url("../images/02-portfolio-6.png");
+  }
 
-#imageB:hover {
-  background: url("../images/02-portfolio-1.png");
-}
+  #imageD:hover {
+    background: url("../images/02-portfolio-3.png");
+  }
 
-#imageC:hover {
-  background: url("../images/02-portfolio-6.png");
-}
+  #imageA:hover, #imageB:hover, #imageC:hover, #imageD:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
-#imageD:hover {
-  background: url("../images/02-portfolio-3.png");
-}
-
-#imageA:hover, #imageB:hover, #imageC:hover, #imageD:hover {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.row {
-  margin-left: -10px;
-}
-
-.col-md-8, .col-lg-8, .col-md-4, .col-lg-4, .col-md-7, .col-lg-7, .col-md-5, .col-lg-5{
-  padding: 0;
-}
-
+/* Contact bar specific link styling */
 .contactBar a {
   color: var(--secondaryColor);
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 /* Media query to change styling of titles in aside for no border right, add border bottom, and align text left */
@@ -224,4 +224,18 @@ a:hover {
     border-right: 0px solid var(--mainColor) !important;
   }
 
+}
+
+/* Media query to change styling of titles */
+@media only screen and (max-width: 500px) {
+  #heroHeadline {
+    font-size: 20px;
+    text-align: right;
+  }
+
+  #pageTitle {
+    font-size: 20px;
+    text-align: left;
+    width: 60%;
+  }
 }
