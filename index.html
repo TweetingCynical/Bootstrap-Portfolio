@@ -13,7 +13,7 @@
   <body id="body">
 
     <!-- Navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-mainColor">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-mainColor fixed">
       <!-- Name plate on the left -->
       <h1 id="pageTitle">Turing
       </h1>
@@ -32,22 +32,24 @@
     </nav>
 
     <!-- Hero banner here -->
-    <div class="jumbotron d-flex justify-content-between align-items-end">
-      <div class="container-fluid">
-
+    <div class="jumbotron d-flex justify-content-end align-items-end">
+      <img class="headshot" src="./images/headshot-nobg-full.png">
+      <div class="container-fluid content">
         <!-- Split jumbotron into two rows to allow text to be more responsive across it's width when narrowing -->
         <!-- First row -->
-        <div class="row">
+        <div class="row headerRow">
           <!-- ^New left-top aligned hero quote -->
           <section class="col-sm-12 col-md-12 col-lg-12 d-flex align-self-start">
-            <span class="heroAbout">
+            <div class="heroAbout">
+              <div class="anim-typewriter heroAbout4">
               <h2>Hello, World!</h2>
+              </div>
               <h2>I build stuff.</h2>
               <h2>Stuff that works.</h2>
-                <h2><span class="bg-secondaryColor">For you...</span></h2>
-            </span>
+                <h2><a href="#contact" class="btn btnAbout btn-primary">Contact me now!</a></h2>
+            </div>
           </section>
-        </div> <!-- Close first row -->
+        </div>
         
         <!-- Second row -->
         <div class="row">
@@ -57,9 +59,9 @@
               <h2>Front End Web Developer</h2>
             </span>
           </section>
-        </div> <!-- Close second row -->
-      </div> <!-- Close container -->
-    </div> <!-- Close Jumbotron -->
+        </div>
+      </div>
+    </div>
 
     <!-- ^New About area with use of cards -->
     <div class="container-fluid content" id="about">
