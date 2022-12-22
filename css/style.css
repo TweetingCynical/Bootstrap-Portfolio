@@ -6,6 +6,7 @@
 :root {
   --mainColor: #3C1934;
   --secondaryColor: #AA3619;
+  --secondaryColorOP: #AA361980;
   --white: white;
   --coreFont: Montserrat;
   --titleFont: Comfortaa;
@@ -77,15 +78,13 @@ html {
 /* Bootstrap framing for hero leader image and headline */
   .jumbotron {
     padding: 20px !important;
-    height: 200px;
+    height: 350px;
     background: linear-gradient( /* Create top layer of semi transparent gradient */
         rgba(79, 62, 89, 0.45), 
         var(--mainColor)
     ), 
-    url("../images/02-wireframe.png"); /* Add bottom layer of hero image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    url("../images/headshot-nobg.png") right top no-repeat, /* Add mid layer (headshot) */
+    url("../images/02-wireframe.png") center no-repeat; /* Add bottom layer of hero image */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -94,8 +93,9 @@ html {
   /* Overlaid headline on hero image */
     .heroHeadline {
       padding: 10px 10px 0 10px;
-      background-color: var(--secondaryColor);
+      background-color: var(--secondaryColorOP);
       text-align: right;
+      border-bottom: 6px solid var(--secondaryColor);
     }
 
 /* Grid specific border settings */
@@ -138,9 +138,10 @@ html {
   }
 
   .workHeadline {
-    background: var(--secondaryColor);
-    padding: 10px;
     text-align: left;
+    padding: 10px 10px 0 10px;
+    background-color: var(--secondaryColorOP);
+    border-bottom: 6px solid var(--secondaryColor);
   }
 
 /* For making sure the images inside grid are appropriately sized and centered */
@@ -158,8 +159,6 @@ html {
   #imageA, #imageB {
     min-height: 350px;
   }
-
-
 
   /* Styling for when user hovers over a work display image.
     Effectively overrides previous setting of linear gradient to give the illusion that the image is lighting up*/
@@ -184,10 +183,17 @@ html {
     box-shadow: 
         inset 0px 0px 20px var(--secondaryColor), 
         0 0 20px var(--secondaryColor);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .imgHover:hover .workHeadline {
+    text-align: left;
+    padding: 10px 10px 0 10px;
+    background-color: var(--secondaryColor);
+    transition: all 0.3s ease-in-out;
   }
 
 /* Contact bar specific link styling */
