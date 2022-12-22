@@ -33,6 +33,7 @@ html {
     line-height: 1.5;
     transition: flex-basis 900ms linear; /* Check whether this is doing what it is intended to do */
     background: var(--mainColor);
+    color: var(--white);
   }
 
   #body .nav-link:hover {
@@ -69,13 +70,7 @@ html {
     border: 5px solid var(--white); 
     max-height: 90px;
   }
-
-  /* Add an image outline with transition effect when user hovers over logo */
-    #logoImg:hover {
-      outline: 6px solid var(--secondaryColor);
-      outline-offset: -5px;
-      transition: all 0.5s ease-in-out;
-    }
+      
 
 /* Bootstrap framing for hero leader image and headline */
   .jumbotron {
@@ -103,13 +98,42 @@ html {
       color: var(--white);
     }
 
+/* Styling for About section */
+  .sectionHeading {
+      text-align: center;
+    }
+
+  .aboutRow {
+    padding: 0px 30px 30px 30px;
+  }
+
+  .card {
+    margin: 0 auto;
+    background: none;
+  }
+
+  /* Add an image outline with transition effect when user hovers over about image */
+  .aboutImg {
+    border: 5px solid var(--white);
+  }
+
+  .aboutImg:hover {
+    outline: 6px solid var(--secondaryColor);
+    outline-offset: -5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+
+
+  
 /* Grid specific border settings */
   .border-right {
     border-right: 5px solid var(--mainColor) !important;
   }
 
   .border {
-    border: 5px solid var(--mainColor) !important;
+    border: 5px solid var(--white) !important;
   }
 
 /* Set grid background images with linear gradients, and add image headline */
