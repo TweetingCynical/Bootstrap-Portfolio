@@ -20,8 +20,12 @@ html {
 }
 
 /* General override of Bootstrap themes and settings */
-  .bg-primary {
+  .bg-mainColor {
     background-color: var(--mainColor) !important;
+  }
+
+  .bg-secondaryColor {
+    background-color: var(--secondaryColor) !important;
   }
 
   body {
@@ -85,9 +89,6 @@ html {
     ), 
     url("../images/headshot-nobg.png") right top no-repeat, /* Add mid layer (headshot) */
     url("../images/02-wireframe.png") center no-repeat; /* Add bottom layer of hero image */
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
   }
 
   /* Overlaid headline on hero image */
@@ -96,6 +97,12 @@ html {
       background-color: var(--secondaryColorOP);
       text-align: right;
       border-bottom: 6px solid var(--secondaryColor);
+    }
+
+    .heroAbout {
+      padding: 10px;
+      text-align: left;
+      color: var(--white);
     }
 
 /* Grid specific border settings */

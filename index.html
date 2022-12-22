@@ -13,9 +13,9 @@
   <body id="body">
 
     <!-- Navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-mainColor">
       <!-- Name plate on the left -->
-      <h1 id="pageTitle">Al Turing
+      <h1 id="pageTitle">Turing
       </h1>
       <!-- Navbar toggler for smaller screens -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,16 +32,35 @@
     </nav>
 
     <!-- Hero banner here -->
-    <div class="jumbotron">
-      <section class="hero">
+    <div class="jumbotron d-flex justify-content-between align-items-end">
+      <div class="container-fluid">
 
-      <!-- Headline source and styling -->
-      <span class="badge badge-primary heroHeadline">
-        <h2>Front End Web Developer</h2>
-      </span>
-      </section>
-    </div>
-
+        <!-- Split jumbotron into two rows to allow text to be more responsive across it's width when narrowing -->
+        <!-- First row -->
+        <div class="row">
+          <!-- ^New left-top aligned hero quote -->
+          <section class="col-sm-12 col-md-12 col-lg-12 d-flex align-self-start">
+            <span class="heroAbout">
+              <h2>Hello, World!</h2>
+              <h2>I build stuff.</h2>
+              <h2>Stuff that works.</h2>
+                <h2><span class="bg-secondaryColor">For you...</span></h2>
+            </span>
+          </section>
+        </div> <!-- Close first row -->
+        
+        <!-- Second row -->
+        <div class="row">
+          <!-- Right aligned headline source and styling -->
+          <section class="hero col-sm-12 col-md-12 col-lg-12 d-flex justify-content-end">
+            <span class="badge badge-primary heroHeadline">
+              <h2>Front End Web Developer</h2>
+            </span>
+          </section>
+        </div> <!-- Close second row -->
+      </div> <!-- Close container -->
+    </div> <!-- Close Jumbotron -->
+    
     <!-- New and improved about display area -->
     <div class="container-fluid">
       <div class="row">
