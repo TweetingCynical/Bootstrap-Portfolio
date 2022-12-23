@@ -43,14 +43,7 @@ html {
 
   a:hover {
     text-decoration: none;
-  }  
-
-/* Needed to override Bootstrap settings for column and row margin and padding */
-  /* .headerRow {
-    margin-left: -10px;
-    margin-right: -10px;
-    width:100%;
-  } */
+  }
 
 /* Styling for nav bar pageTitle/image/logo */
   #pageTitle {
@@ -126,11 +119,6 @@ html {
   }
 
 /* Styling for About section */
-  .about {
-    padding: 20px;
-    margin: 20px;
-  }
-
   .sectionHeading {
       text-align: center;
       padding: 50px;
@@ -212,27 +200,26 @@ html {
   color: var(--mainColor)
 }
 
-.btnSkills {
+.btnSkills, .btnContact {
   background-color: var(--secondaryColor);
   border: none;
   cursor: pointer;
 }
 
-.btnSkills:hover {
+.btnSkills {
+  margin-bottom: 100px;
+}
+
+.btnSkills:hover, .btnContact:hover {
   background-color: var(--mainColor);
   color: var(--white);
   transform: scale(1.3);
   transition: all 0.3s ease-in-out;
 }
 
-#btnSkills:hover {
-  transform-origin: left;
+#btnSkills:hover, .btnContact:hover {
+  transform-origin: cemter;
 }
-
-/* Grid specific border settings */
-  .border-right {
-    border-right: 5px solid var(--mainColor) !important;
-  }
 
   .border {
     border: 5px solid var(--white) !important;
@@ -240,32 +227,32 @@ html {
 
 /* Set grid background images with linear gradients, and add image headline */
   #imageA {
-    background: linear-gradient( /* Create top layer of semi transparent gradient */
+    background: linear-gradient(
         rgba(79, 62, 89, 0.45), 
         var(--mainColor)
     ), 
-    url("../images/02-portfolio-5.png"); /* Add bottom layer of work display image */
+    url("../images/02-portfolio-5.png");
   }
   #imageB {
-    background: linear-gradient( /* Create top layer of semi transparent gradient */
+    background: linear-gradient(
         rgba(79, 62, 89, 0.45), 
         var(--mainColor)
     ), 
-    url("../images/02-portfolio-1.png"); /* Add bottom layer of work display image */
+    url("../images/02-portfolio-1.png");
   }
   #imageC {
-    background: linear-gradient( /* Create top layer of semi transparent gradient */
+    background: linear-gradient(
         rgba(79, 62, 89, 0.45), 
         var(--mainColor)
     ), 
-    url("../images/02-portfolio-6.png"); /* Add bottom layer of work display image */
+    url("../images/02-portfolio-6.png");
   }
   #imageD {
-    background: linear-gradient( /* Create top layer of semi transparent gradient */
+    background: linear-gradient(
         rgba(79, 62, 89, 0.45), 
         var(--mainColor)
     ), 
-    url("../images/02-portfolio-3.png"); /* Add bottom layer of work display image */
+    url("../images/02-portfolio-3.png");
   }
 
   .workHeadline {
@@ -342,13 +329,12 @@ html {
 
 .contactContainer {
   display: grid;
-  grid-template-columns: 50% 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
   "connected phone email"
   "connected github twitter"
   "connected linkedin other";
-  height: 330px;
     position: relative;
 }
 
@@ -384,9 +370,8 @@ html {
 
 .connected {
   grid-area: connected;
-  background: url("../images/contact-gc.png") center no-repeat;
-  background-size: cover;
   border: 5px solid var(--mainColor);
+  width: 50vw;
 }
 
 #sidenavbar {
@@ -477,12 +462,15 @@ html {
 
 /* Media query to change styling of titles in aside for no border right, add border bottom, and align text left */
 @media only screen and (max-width: 767px) {
-  #about, #work, #contact {
-    border-bottom: 1px solid var(--mainColor);
-    text-align: left !important;
-  }
-  .border-right {
-    border-right: 0px solid var(--mainColor) !important;
+  .contactContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "connected connected connected"
+    "connected connected connected"
+    "phone email twitter"
+    "github linkedin other";
+    position: relative;
   }
 }
 
@@ -495,5 +483,11 @@ html {
     font-size: 20px;
     text-align: left;
     width: 40%;
+  }
+
+  .contactItem {
+    width: 65px;
+    height: 30px;
+    font-size: 12px;
   }
 }
