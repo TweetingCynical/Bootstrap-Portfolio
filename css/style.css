@@ -52,10 +52,6 @@ html {
     width:100%;
   }
 
-  .col-md-8, .col-lg-8, .col-md-4, .col-lg-4, .col-md-7, .col-lg-7, .col-md-5, .col-lg-5{
-    padding: 0;
-  }
-
 /* Styling for nav bar pageTitle/image/logo */
   #pageTitle {
     width: 300px;
@@ -180,6 +176,12 @@ html {
   padding: 20px;
 }
 
+.porfolio {
+  background-color: var(--mainColor);
+  color: var(--white);
+  padding: 20px !important;
+}
+
 .skillsImg {
   width: 70px;
   height: 70px;
@@ -266,9 +268,12 @@ html {
 
   .workHeadline {
     text-align: left;
-    padding: 10px 10px 0 10px;
     background-color: var(--secondaryColorOP);
     border-bottom: 6px solid var(--secondaryColor);
+  }
+
+  .nopad {
+    padding: 0;
   }
 
 /* For making sure the images inside grid are appropriately sized and centered */
@@ -284,7 +289,7 @@ html {
   }
 
   #imageA, #imageB {
-    min-height: 350px;
+    min-height: 410px;
   }
 
   /* Styling for when user hovers over a work display image.
