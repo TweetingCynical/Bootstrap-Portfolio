@@ -132,6 +132,7 @@ html {
 /* Styling for About section */
   .sectionHeading {
       text-align: center;
+      padding: 50px;
     }
 
   .aboutRow {
@@ -166,9 +167,63 @@ html {
     background-color: var(--white);
     color: var(--secondaryColor);
     transform: scale(1.3);
-    transform-origin: left;
     transition: all 0.3s ease-in-out;
   }
+
+  #btnAbout:hover {
+    transform-origin: left;
+  }
+
+.skills {
+  background-color: var(--white);
+  color: var(--mainColor);
+  padding: 20px;
+}
+
+.skillsImg {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: 2px solid var(--mainColor);
+}
+
+.skillsProgress {
+  height: 30px;
+  padding: 5px;
+  margin: 20px;
+  background-color: var(--mainColor);
+}
+
+.skillsProgressBar {
+  background-color: var(--secondaryColor);
+}
+
+.spinnerColor1 {
+  color: var(--secondaryColorOP)
+}
+.spinnerColor2 {
+  color: var(--secondaryColor)
+}
+.spinnerColor3 {
+  color: var(--mainColor)
+}
+
+.btnSkills {
+  background-color: var(--secondaryColor);
+  border: none;
+  cursor: pointer;
+}
+
+.btnSkills:hover {
+  background-color: var(--mainColor);
+  color: var(--white);
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+#btnSkills:hover {
+  transform-origin: left;
+}
 
 /* Grid specific border settings */
   .border-right {
