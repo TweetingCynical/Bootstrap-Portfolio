@@ -15,16 +15,16 @@
 
 <body id="body">
 
-  <!-- Side navbar here -->
-  <div id="sidenavbar">
+  <!-- Side navbar section -->
+  <nav id="sidenavbar" role="navigation">
     <a class="homeNav rounded" href="#home"></a>
     <a class="aboutNav rounded" href="#about"></a>
     <a class="skillsNav rounded" href="#skills"></a>
     <a class="portfolioNav rounded" href="#portfolio"></a>
-    <a class="contactNav" href="#contact"></a>
-  </div>
+    <a class="contactNav rounded" href="#contact"></a>
+  </nav>
 
-  <!-- Navbar start -->
+  <!-- Top navbar section -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-mainColor fixed" id="home">
     <!-- Name plate on the left -->
     <h1 id="pageTitle">Turing
@@ -45,7 +45,7 @@
     </div>
   </nav>
 
-  <!-- Hero banner here -->
+  <!-- Hero section -->
   <div class="jumbotron d-flex justify-content-end align-items-end pb-5">
     <img class="headshot" src="./images/headshot-nobg-full.png">
     <div class="container-fluid content">
@@ -77,8 +77,8 @@
     </div>
   </div>
 
-  <!-- New About area with use of cards -->
-  <div class="container-fluid content pb-5" id="about">
+  <!-- About section -->
+  <div class="container-fluid content p-5 about" id="about">
     <h2 class="sectionHeading">About</h2>
     <p>I believe that my work should be safe, ethical, data driven, and ultimately result in a better customer
       experience.
@@ -92,8 +92,9 @@
       businesses.
     </p>
     <br>
-    <div class="row aboutRow">
 
+    <!-- Define row for holding about cards -->
+    <div class="row aboutRow">
       <!-- Who am I card -->
       <div class="card text-center cardAbout col-sm-12 col-md-4 col-lg-4">
         <img src="images/who-am-i.png" class="aboutImg card-img-top rounded-circle shadow-lg mx-auto"
@@ -128,15 +129,13 @@
   </div>
 
   <!-- Skills section -->
-  <div class="container-fluid bg-dark bg-white skills pb-5" id="skills">
+  <div class="container-fluid bg-dark bg-white skills p-5" id="skills">
     <h2 class="sectionHeading">Skills</h2>
-    <div class="row">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aliquam? Voluptas veniam, optio assumenda
         unde, ea error eaque voluptate beatae fugit laudantium, nemo rem nostrum modi facilis earum et quibusdam.</p>
-    </div>
     <!-- Start of progress bars container -->
     <div class="row">
-      <!-- First column -->
+      <!-- First column information -->
       <div class="col-sm-4 d-flex flex-column">
         <!-- HTML Progress -->
         <img class="skillsImg shadow-lg rounded mx-auto" src="images/html.png" alt="html logo">
@@ -167,7 +166,7 @@
           </div>
         </div>
       </div>
-      <!-- Second column -->
+      <!-- Second column CTA -->
       <div class="col-sm-4 d-flex flex-column justify-content-center">
         <div class="text-center">
           <h3 class="sectionHeader">New skills loading</h3>
@@ -186,7 +185,7 @@
           <a href="#contact" class="btn btnSkills btn-primary mt-auto align-self-center">Download Resumé</a>
         </div>
       </div>
-      <!-- Third column -->
+      <!-- Third column information -->
       <div class="col-sm-4 d-flex flex-column">
         <!-- Version Control Progress -->
         <img class="skillsImg shadow-lg rounded mx-auto" src="images/github.png" alt="github logo">
@@ -220,10 +219,9 @@
     </div>
   </div>
 
-  <!-- Portfolio display -->
-  <div class="container-fluid portfolio pb-5" id="portfolio">
+  <!-- Portfolio section -->
+  <div class="container-fluid portfolio p-5" id="portfolio">
     <h2 class="sectionHeading">Work Portfolio</h2>
-    <div class="row">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aliquam? Voluptas veniam, optio assumenda
         unde, ea error eaque voluptate beatae fugit laudantium, nemo rem nostrum modi facilis earum et quibusdam.</p>
       <div class="container">
@@ -282,20 +280,16 @@
               </a>
             </div>
           </div>
-
         </div>
       </div>
-    </div>
   </div>
 
   <!-- Contact section -->
-  <div class="container-fluid bg-dark bg-white skills pb-5" id="contact">
+  <div class="container-fluid bg-dark bg-white skills p-5" id="contact">
     <h2 class="sectionHeading">Contact</h2>
-    <div class="row">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aliquam? Voluptas veniam, optio assumenda
         unde, ea error eaque voluptate beatae fugit laudantium, nemo rem nostrum modi facilis earum et quibusdam.</p>
-    </div>
-    <!-- Start of progress bars container -->
+    <!-- Contact buttons -->
     <div class="contactContainer">
       <!-- <img class="contactImgBg" src="/images/contact-bg-10.png"> -->
       <a href="" class="phone contactItem btn btn-primary btnSkills">Call</a>

@@ -15,7 +15,6 @@
 html {
   max-width: 1280px;
   margin: 0 auto;
-  /* overflow: scroll; */
   scroll-behavior: smooth;
 }
 
@@ -34,7 +33,7 @@ html {
     transition: flex-basis 900ms linear; /* Check whether this is doing what it is intended to do */
     background: var(--mainColor);
     color: var(--white);
-    padding: 20px;
+    padding: 0 10px 10px 10px;
   }
 
   #body .nav-link:hover {
@@ -47,11 +46,11 @@ html {
   }  
 
 /* Needed to override Bootstrap settings for column and row margin and padding */
-  .headerRow {
+  /* .headerRow {
     margin-left: -10px;
     margin-right: -10px;
     width:100%;
-  }
+  } */
 
 /* Styling for nav bar pageTitle/image/logo */
   #pageTitle {
@@ -89,11 +88,11 @@ html {
       background-color: var(--secondaryColorOP);
       text-align: right;
       border-bottom: 6px solid var(--secondaryColor);
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .heroAbout {
-      padding: 100px;
+      padding: 30px;
       text-align: left;
       color: var(--white);
     }
@@ -127,6 +126,11 @@ html {
   }
 
 /* Styling for About section */
+  .about {
+    padding: 20px;
+    margin: 20px;
+  }
+
   .sectionHeading {
       text-align: center;
       padding: 50px;
@@ -173,14 +177,11 @@ html {
 .skills {
   background-color: var(--white);
   color: var(--mainColor);
-  padding: 20px;
 }
 
 .portfolio {
   background-color: var(--mainColor);
   color: var(--white);
-  padding: 20px;
-  margin: 20px;
 }
 
 .skillsImg {
