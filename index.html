@@ -12,8 +12,17 @@
   </head>
   <body id="body">
 
+    <!-- Side navbar here -->
+    <div id="sidenavbar">
+      <a class="homeNav" href="#home"></a>
+      <a class="aboutNav" href="#about"></a>
+      <a class="skillsNav" href="#skills"></a>
+      <a class="portfolioNav" href="#portfolio"></a>
+      <a class="contactNav" href="#contact"></a>
+    </div>
+
     <!-- Navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-mainColor fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-mainColor fixed" id="home">
       <!-- Name plate on the left -->
       <h1 id="pageTitle">Turing
       </h1>
@@ -25,6 +34,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#skills">Skills</a>
           <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
           <a class="nav-item nav-link active" href="#contact">Contact</a>
         </div>
@@ -32,7 +42,7 @@
     </nav>
 
     <!-- Hero banner here -->
-    <div class="jumbotron d-flex justify-content-end align-items-end">
+    <div class="jumbotron d-flex justify-content-end align-items-end pb-5">
       <img class="headshot" src="./images/headshot-nobg-full.png">
       <div class="container-fluid content">
         <!-- Split jumbotron into two rows to allow text to be more responsive across it's width when narrowing -->
@@ -64,7 +74,7 @@
     </div>
 
     <!-- ^New About area with use of cards -->
-    <div class="container-fluid content" id="about">
+    <div class="container-fluid content pb-5" id="about">
       <h2 class="sectionHeading">About</h2>
       <p>I believe that my work should be safe, ethical, data driven, and ultimately result in a better customer experience.
         I have a keen eye for detail and enjoy applying my data management knowledge to bringing about service improvement
@@ -111,7 +121,7 @@
     </div>
 
     <!-- Skills section -->
-    <div class="container-fluid bg-dark bg-white skills">
+    <div class="container-fluid bg-dark bg-white skills pb-5" id="skills">
       <h2 class="sectionHeading">Skills</h2>
       <div class="row">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aliquam? Voluptas veniam, optio assumenda
@@ -204,7 +214,7 @@
     </div>
 
 <!-- Portfolio display -->
-<div class="container-fluid portfolio">
+<div class="container-fluid portfolio pb-5" id="portfolio">
   <h2 class="sectionHeading">Work Portfolio</h2>
   <div class="row">
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aliquam? Voluptas veniam, optio assumenda
@@ -240,9 +250,9 @@
           </div>
         </div>
         <!-- 25% width column 3 stacked items-->
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 cardFlex">
           <!-- Portfolio item C -->
-          <div class="card text-center cardAbout">
+          <div class="card text-center cardAbout mb-3">
             <a href="https://tweetingcynical.github.io/code-refactor-html" target="_blank">
               <div class="border imgHover card-body nopad" id="imageC">
                 <div class="badge badge-primary workHeadline">
@@ -253,7 +263,7 @@
             </a>
           </div>
           <!-- Portfolio item D -->
-          <div class="card text-center cardAbout">
+          <div class="card text-center cardAbout mt-3">
             <a href="https://coolors.co/palette/aa3619-cc6116-feaa65-b1584e-783742-5d2631-3c1934-4f3e59-60dcfa-e8ebdc"
               target="_blank">
               <div class="border imgHover card-body nopad" id="imageD">
@@ -271,46 +281,24 @@
   </div>
 </div>
 
-<!-- Skills section -->
-<div class="container-fluid bg-dark bg-white skills">
+<!-- Contact section -->
+<div class="container-fluid bg-dark bg-white skills pb-5" id="contact">
   <h2 class="sectionHeading">Contact</h2>
 <div class="row">
 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aliquam? Voluptas veniam, optio assumenda unde, ea error eaque voluptate beatae fugit laudantium, nemo rem nostrum modi facilis earum et quibusdam.</p>
 </div>
   <!-- Start of progress bars container -->
-  <div class="row">
-    <!-- First column -->
-
-    <!-- Second column -->
-
-    <!-- Third column -->
-
-  </div>
+    <div class="contactContainer">
+      <!-- <img class="contactImgBg" src="/images/contact-bg-10.png"> -->
+      <a href="" class="phone contactItem btn btn-primary btnSkills">Call</a>
+      <a href="" class="email contactItem btn btn-primary btnSkills">Email</a>
+      <a href="" class="twitter contactItem btn btn-primary btnSkills">Twitter</a>
+      <a href="" class="github contactItem btn btn-primary btnSkills">Github</a>
+      <a href="" class="linkedin contactItem btn btn-primary btnSkills">LinkedIN</a>
+      <a href="" class="other contactItem btn btn-primary btnSkills">Other</a>
+      <a href="" class="connected shadow-lg rounded"></a>
+    </div>
 </div>
-
-    <!-- New and improved contact display area -->
-    <div class="container-fluid">
-      <div class="row">
-
-        <!-- About title column -->
-        <div class="col-sm-12 col-md-3 col-lg-3 border-right">
-          <h3 class="text-right" id="contact">Contact</h3>
-        </div> <!-- Close about title column -->
-
-        <!-- About display column-->
-        <div class="col-sm-12 col-md-9 col-lg-9">
-          <!-- Contact nav links -->
-          <nav class="nav justify-content-around contactBar">
-            <a class="nav-link active" href="tel:555-555-5555">Call</a>
-            <a class="nav-link" href="mailto:just@aplaceholder.com">Email</a>
-            <a class="nav-link" href="https://github.com/TweetingCynical">GitHub</a>
-            <a class="nav-link" href="https://twitter.com/TweetingCynical">Twitter</a>
-          </nav>
-        </div> <!-- Close contact display column-->
-      </div> <!-- Close entire contact row-->
-    </div> <!-- Close contact container-->
-
-    <br> <!-- White space to separate the rows -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

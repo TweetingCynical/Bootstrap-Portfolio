@@ -34,6 +34,7 @@ html {
     transition: flex-basis 900ms linear; /* Check whether this is doing what it is intended to do */
     background: var(--mainColor);
     color: var(--white);
+    padding: 20px;
   }
 
   #body .nav-link:hover {
@@ -136,7 +137,6 @@ html {
   }
 
   .cardAbout {
-    margin: 0 auto;
     background: none;
     border: none;
   }
@@ -176,10 +176,11 @@ html {
   padding: 20px;
 }
 
-.porfolio {
+.portfolio {
   background-color: var(--mainColor);
   color: var(--white);
-  padding: 20px !important;
+  padding: 20px;
+  margin: 20px;
 }
 
 .skillsImg {
@@ -276,6 +277,11 @@ html {
     padding: 0;
   }
 
+  .cardFlex {
+    display: flex;
+    flex-direction: column;
+  }
+
 /* For making sure the images inside grid are appropriately sized and centered */
   #imageA, #imageB, #imageC, #imageD {
     background-repeat: no-repeat;
@@ -289,8 +295,8 @@ html {
   }
 
   #imageA, #imageB {
-    min-height: 410px;
-  }
+    min-height: 443px;
+  }   
 
   /* Styling for when user hovers over a work display image.
     Effectively overrides previous setting of linear gradient to give the illusion that the image is lighting up*/
@@ -331,6 +337,133 @@ html {
 /* Contact bar specific link styling */
 .contactBar a {
   color: var(--secondaryColor);
+}
+
+.contactContainer {
+  display: grid;
+  grid-template-columns: 50% 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+  "connected phone email"
+  "connected github twitter"
+  "connected linkedin other";
+  height: 330px;
+    position: relative;
+}
+
+.contactItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  z-index: 2;
+  width: 100px;
+  height: 50px;
+}
+
+.linkedin{
+  grid-area: linkedin;
+}
+.twitter{
+  grid-area: twitter;
+}
+.github{
+  grid-area: github;
+}
+.phone{
+  grid-area: phone;
+}
+.email{
+  grid-area: email;
+}
+.other{
+  grid-area: other;
+}
+
+.connected {
+  grid-area: connected;
+  background: url("/images/contact-gc.png") center no-repeat;
+  background-size: cover;
+  border: 5px solid var(--mainColor);
+}
+
+#sidenavbar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  width: 80px;
+  height: 100%;
+  background-color: none;
+  z-index: 5;
+}
+
+#sidenavbar a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.homeNav {
+  background: url("/images/home-init.png");
+}
+
+.aboutNav {
+  background: url("/images/about-init.png");
+}
+
+.skillsNav {
+  background: url("/images/skills-init.png");
+}
+
+.portfolioNav {
+  background: url("/images/portfolio-init.png");
+}
+
+.contactNav {
+  background: url("/images/contact-init.png");
+}
+
+.homeNav, .aboutNav, .portfolioNav, .skillsNav, .contactNav {
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  margin: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.homeNav:hover {
+  background: url("/images/home-hover.png");
+}
+
+.aboutNav:hover {
+  background: url("/images/about-hover.png");
+}
+
+.skillsNav:hover {
+  background: url("/images/skills-hover.png");
+}
+
+.portfolioNav:hover {
+  background: url("/images/portfolio-hover.png");
+}
+
+.contactNav:hover {
+  background: url("/images/contact-hover.png");
+}
+
+.homeNav:hover, .aboutNav:hover, .skillsNav:hover, .portfolioNav:hover, .contactNav:hover {
+  transform: scale(1.1);
+  transform-origin: left;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #3c1934;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
 }
 
 /* Media query to change styling of titles in aside for no border right, add border bottom, and align text left */
