@@ -383,7 +383,7 @@ html {
 
 .connected {
   grid-area: connected;
-  background: url("/images/contact-gc.png") center no-repeat;
+  background: url("../images/contact-gc.png") center no-repeat;
   background-size: cover;
   border: 5px solid var(--mainColor);
 }
@@ -405,23 +405,23 @@ html {
 }
 
 .homeNav {
-  background: url("/images/home-init.png");
+  background: url("../images/home-init.png");
 }
 
 .aboutNav {
-  background: url("/images/about-init.png");
+  background: url("../images/about-init.png");
 }
 
 .skillsNav {
-  background: url("/images/skills-init.png");
+  background: url("../images/skills-init.png");
 }
 
 .portfolioNav {
-  background: url("/images/portfolio-init.png");
+  background: url("../images/portfolio-init.png");
 }
 
 .contactNav {
-  background: url("/images/contact-init.png");
+  background: url("../images/contact-init.png");
 }
 
 .homeNav, .aboutNav, .portfolioNav, .skillsNav, .contactNav {
@@ -436,23 +436,23 @@ html {
 }
 
 .homeNav:hover {
-  background: url("/images/home-hover.png");
+  background: url("../images/home-hover.png");
 }
 
 .aboutNav:hover {
-  background: url("/images/about-hover.png");
+  background: url("../images/about-hover.png");
 }
 
 .skillsNav:hover {
-  background: url("/images/skills-hover.png");
+  background: url("../images/skills-hover.png");
 }
 
 .portfolioNav:hover {
-  background: url("/images/portfolio-hover.png");
+  background: url("../images/portfolio-hover.png");
 }
 
 .contactNav:hover {
-  background: url("/images/contact-hover.png");
+  background: url("../images/contact-hover.png");
 }
 
 .homeNav:hover, .aboutNav:hover, .skillsNav:hover, .portfolioNav:hover, .contactNav:hover {
