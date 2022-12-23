@@ -336,6 +336,7 @@ html {
   "connected github twitter"
   "connected linkedin other";
     position: relative;
+    margin: 5px;
 }
 
 .contactItem {
@@ -372,12 +373,13 @@ html {
   grid-area: connected;
   border: 5px solid var(--mainColor);
   width: 50vw;
+  max-width: 640px;
 }
 
 #sidenavbar {
   position: fixed;
   left: 0;
-  top: 50%;
+  top: 40%;
   width: 80px;
   height: 100%;
   background-color: none;
@@ -462,9 +464,17 @@ html {
 
 /* Media query to change styling of titles in aside for no border right, add border bottom, and align text left */
 @media only screen and (max-width: 767px) {
+  .headshot {
+    height: 300px;
+  }
+
+  .jumbotron {
+    height: 450px;
+  }
+
   .contactContainer {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
     "connected connected connected"
     "connected connected connected"
@@ -475,7 +485,32 @@ html {
 }
 
 /* Media query to change styling of titles */
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 576px) {
+  .heroHeadline h2, .heroAbout h2 {
+    font-size: 18px;
+  }
+  #pageTitle {
+    font-size: 20px;
+    text-align: left;
+    width: 40%;
+  }
+
+  .contactItem {
+    width: 65px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+/* Media query to change styling of titles */
+@media only screen and (max-width: 390px) {
+  .headshot {
+    height: 250px;
+  }
+
+  .jumbotron {
+    height: 400px;
+  }
   .heroHeadline h2, .heroAbout h2 {
     font-size: 18px;
   }
