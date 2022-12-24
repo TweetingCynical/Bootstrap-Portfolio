@@ -268,6 +268,7 @@ html {
   .cardFlex {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
 /* For making sure the images inside grid are appropriately sized and centered */
@@ -472,6 +473,10 @@ html {
     height: 450px;
   }
 
+  #imageA, #imageB {
+    min-height: 200px;
+  }
+
   .contactContainer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -505,24 +510,28 @@ html {
 /* Media query to change styling of titles */
 @media only screen and (max-width: 390px) {
   .headshot {
-    height: 250px;
+    height: 200px;
   }
 
   .jumbotron {
-    height: 400px;
+    height: 350px;
   }
   .heroHeadline h2, .heroAbout h2 {
-    font-size: 18px;
+    font-size: 14px;
   }
+  .heroAbout, .heroAbout h2, .heroAbout a {
+    font-size: 14px;
+  }
+
   #pageTitle {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     width: 40%;
   }
 
   .contactItem {
-    width: 65px;
-    height: 30px;
-    font-size: 12px;
+    width: 55px;
+    height: 25px;
+    font-size: 10px;
   }
 }
