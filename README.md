@@ -13,7 +13,7 @@ Re-build the professional portfolio page for showcasing work on web development 
 ### Wireframe
 
 The initial layout design created for the work display grid was envisioned using good old pencil and paper technology, favoured by live, in-person teamworking. Here is one one of the iterations that eventually led to the design you see on the live site today:
-![Wireframing](./assets/images/wireframing.png)
+![Wireframing](./images/wireframing.png)
 
 ### Overview of Build
 
@@ -50,16 +50,16 @@ This page has been built to showcase some of the following skills in use in the 
 ## Screenshot
 
 Working version of site should look like this at standard screen size:
-![Site Screenshot](./assets/images/screenshot-ws.png)
+![Site Screenshot](./images/screenshot-ws.png)
 
 Working version of site should look like this with screen size smaller than 992px:
-![Site Screenshot](./assets/images/screenshot-991px.png)
+![Site Screenshot](./images/screenshot-991px.png)
 
 Working version of site should look like this with screen size smaller than 768px:
-![Site Screenshot](./assets/images/screenshot-767px.png)
+![Site Screenshot](./images/screenshot-767px.png)
 
 Working version of site should look like this with edge case screen size smaller of 320px:
-![Site Screenshot](./assets/images/screenshot-320px.png)
+![Site Screenshot](./images/screenshot-320px.png)
 
 ## License
 
