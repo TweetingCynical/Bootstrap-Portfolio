@@ -46,7 +46,7 @@
   </nav>
 
   <!-- Hero section -->
-  <div class="jumbotron d-flex justify-content-end align-items-end pb-5">
+  <header class="jumbotron d-flex justify-content-end align-items-end pb-5">
     <img class="headshot" src="./images/headshot-nobg-full.png">
     <div class="container-fluid content">
       <!-- Split jumbotron into two rows to allow text to be more responsive across it's width when narrowing -->
@@ -75,10 +75,11 @@
         </section>
       </div>
     </div>
-  </div>
+  </header>
 
+<main>
   <!-- About section -->
-  <div class="container-fluid content p-5" id="about">
+  <section class="container-fluid content p-5" id="about">
     <h2 class="sectionHeading">About</h2>
     <p>I believe that my work should be safe, ethical, data driven, and ultimately result in a better customer
       experience.
@@ -96,7 +97,7 @@
     <!-- Define row for holding about cards -->
     <div class="row aboutRow">
       <!-- Who am I card -->
-      <div class="card text-center cardAbout col-sm-12 col-md-4 col-lg-4">
+      <article class="card text-center cardAbout col-sm-12 col-md-4 col-lg-4">
         <img src="images/who-am-i.png" class="aboutImg card-img-top rounded-circle shadow-lg mx-auto"
           alt="man with glasses looking off camera">
         <div class="card-body d-flex flex-column">
@@ -104,9 +105,9 @@
           <p class="card-text">This is where I will add a little bit about me.</p>
           <a href="#contact" class="btn btnAbout btn-primary mt-auto align-self-center">Look at my CV</a>
         </div>
-      </div>
+      </article>
       <!-- Journey card -->
-      <div class="card text-center cardAbout col-sm-12 col-md-4 col-lg-4">
+      <article class="card text-center cardAbout col-sm-12 col-md-4 col-lg-4">
         <img src="images/my-journey.png" class="aboutImg card-img-top rounded-circle shadow-lg mx-auto"
           alt="man on road looking at stars">
         <div class="card-body d-flex flex-column">
@@ -114,9 +115,9 @@
           <p class="card-text">This is where I will add the details of my journey so far.</p>
           <a href="#contact" class="btn btnAbout btn-primary mt-auto align-self-center">Join me on my journey</a>
         </div>
-      </div>
+      </article>
       <!-- Values card -->
-      <div class="card text-center cardAbout col-sm-12 col-md-4 col-lg-4">
+      <article class="card text-center cardAbout col-sm-12 col-md-4 col-lg-4">
         <img src="images/values-board.png" class="aboutImg card-img-top rounded-circle shadow-lg mx-auto"
           alt="post-it notes with a range of values">
         <div class="card-body d-flex flex-column">
@@ -124,12 +125,12 @@
           <p class="card-text">This is where I will add what my values are.</p>
           <a href="#contact" class="btn btnAbout btn-primary mt-auto align-self-center">Let's Collaborate</a>
         </div>
-      </div>
+      </article>
     </div>
-  </div>
+  </section>
 
   <!-- Skills section -->
-  <div class="container-fluid bg-dark bg-white skills p-5" id="skills">
+  <section class="container-fluid bg-dark bg-white skills p-5" id="skills">
     <h2 class="sectionHeading">Skills</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aliquam? Voluptas veniam, optio assumenda
         unde, ea error eaque voluptate beatae fugit laudantium, nemo rem nostrum modi facilis earum et quibusdam.</p>
@@ -156,7 +157,7 @@
       </div>
 
       <!-- Second column CTA -->
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 d-flex flex-column">
+      <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 d-flex flex-column">
         <!-- HTML Progress -->
         <img class="skillsImg shadow-lg rounded mx-auto" src="images/html.png" alt="html logo">
         <div class="progress skillsProgress shadow-lg">
@@ -185,10 +186,10 @@
             aria-valuemin="0" aria-valuemax="100">UX Design Principles
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Third column information -->
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 d-flex flex-column">
+      <article class="col-xs-12 col-sm-6 col-md-6 col-lg-4 d-flex flex-column">
         <!-- Version Control Progress -->
         <img class="skillsImg shadow-lg rounded mx-auto" src="images/github.png" alt="github logo">
         <div class="progress skillsProgress shadow-lg">
@@ -217,12 +218,12 @@
             aria-valuemin="0" aria-valuemax="100">Deploy WebApps with Netlify
           </div>
         </div>
-      </div>
+      </article>
     </div>
-  </div>
+  </section>
 
   <!-- Portfolio section -->
-  <div class="container-fluid portfolio p-5" id="portfolio">
+  <section class="container-fluid portfolio p-5" id="portfolio">
     <h2 class="sectionHeading">Work Portfolio</h2>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aliquam? Voluptas veniam, optio assumenda
       unde, ea error eaque voluptate beatae fugit laudantium, nemo rem nostrum modi facilis earum et quibusdam.</p>
@@ -231,7 +232,7 @@
       <!-- 2fr width column 1 -->
       <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 mb-4">
         <!-- Portfolio item A -->
-        <div class="card text-center cardAbout">
+        <article class="card text-center cardAbout">
           <a href="https://tweetingcynical.github.io/furniture-visual-improvements" target="_blank">
             <div class="imgBorder imgHover card-body nopad" id="imageA">
               <div class="badge badge-primary workHeadline">
@@ -240,12 +241,12 @@
               </div>
             </div>
           </a>
-        </div>
+        </article>
       </div>
       <!-- 1fr width column 2 -->
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-4">
         <!-- Portfolio item B -->
-        <div class="card text-center cardAbout">
+        <article class="card text-center cardAbout">
           <a href="https://www.planar.com/products/led-video-walls/" target="_blank">
             <div class="imgBorder imgHover card-body nopad" id="imageB">
               <div class="badge badge-primary workHeadline">
@@ -254,7 +255,7 @@
               </div>
             </div>
           </a>
-        </div>
+        </article>
       </div>
     </div>
     <!-- Second row -->
@@ -262,7 +263,7 @@
       <!-- 1fr width column 1-->
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-4">
         <!-- Portfolio item C -->
-        <div class="card text-center cardAbout">
+        <article class="card text-center cardAbout">
           <a href="https://tweetingcynical.github.io/code-refactor-html" target="_blank">
             <div class="imgBorder imgHover card-body nopad" id="imageC">
               <div class="badge badge-primary workHeadline">
@@ -271,12 +272,12 @@
               </div>
             </div>
           </a>
-        </div>
+        </article>
       </div>
       <!-- 2fr width column 2-->
       <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 mb-4">
         <!-- Portfolio item D -->
-        <div class="card text-center cardAbout">
+        <article class="card text-center cardAbout">
           <a href="https://coolors.co/palette/aa3619-cc6116-feaa65-b1584e-783742-5d2631-3c1934-4f3e59-60dcfa-e8ebdc"
             target="_blank">
             <div class="imgBorder imgHover card-body nopad" id="imageD">
@@ -286,13 +287,15 @@
               </div>
             </div>
           </a>
-        </div>
+        </article>
       </div>
     </div>
-  </div>
+  </section>
+</main>
 
-  <!-- Contact section -->
-  <div class="container-fluid bg-dark bg-white skills p-5" id="contact">
+<!-- Contact section -->
+<footer>
+  <section class="container-fluid bg-dark bg-white skills p-5" id="contact">
     <h2 class="sectionHeading">Contact</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aliquam? Voluptas veniam, optio assumenda
         unde, ea error eaque voluptate beatae fugit laudantium, nemo rem nostrum modi facilis earum et quibusdam.</p>
@@ -306,7 +309,11 @@
       <a href="#" class="other contactItem btn btn-primary btnContact">Other</a>
       <img class="connected shadow-lg rounded mx-auto align-self-center" src="/images/contact-gc.png">
     </div>
-  </div>
+    <br>
+    <p class="text-center">&copy; 2022. All rights reserved.</p>
+  </section>
+</footer>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

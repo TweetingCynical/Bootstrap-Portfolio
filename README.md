@@ -13,7 +13,7 @@ Re-build the professional portfolio page for showcasing work on web development 
 ### Wireframe
 
 The initial layout design created for the work display grid was envisioned using good old pencil and paper technology, favoured by live, in-person teamworking. Here is one one of the iterations that eventually led to the design you see on the live site today:
-![Grid wireframing](./assets/images/wireframing-grid-outline.png)
+![Wireframing](./assets/images/wireframing.png)
 
 ### Overview of Build
 
@@ -22,16 +22,22 @@ This page has been built to showcase some of the following skills in use in the 
 - @import to use fonts stored with google apis;
 - :root to store colour overrides and font for sitewide use;
 - Creation of nav bar, nav links and responsive settings using Bootstrap;
+- Creation of a side nav bar with hover effect on buttons, fixed to the left side and no scrolling;
 - Use of jumbotron for page hero;
+- Animation effect on the h2 Hello, World! title to look like typewriter;
 - Use of Boostrap's flex grid system for the main content;
 - Creation of key overrides for use of personalised colours, borders, margins and padding;
-- Use of Boostrap class for customising styles, such as rounded-circle to create a circular image;
+- Use of Boostrap classes for customising styles, such as rounded-circle to create a circular image;
 - Transition effect to nav bar logo, images and a tags;
 - Linear gradients used on header and work display images using stored colours;
 - Override styling of different classes within the grid to allow for easier addition of future grid rows;
 - Use of Bootstrap badge tags for overlaying of headlines onto images;
+- Use of Bootstrap spinners for added effect in skills section;
+- Use of Bootstrap progress bars for skills learned and expected learning;
 - Hover options to add an outline border and remove linear gradients to draw focus to images;
 - Media queries override to manage edge cases and to adjust for sizes of viewport not managed by Boostrap's responsiveness.
+- Combine like attribute values to streamline CSS code;
+- Use of html semantics where possible.
 
 
 ## Suggested future changes
@@ -46,8 +52,14 @@ This page has been built to showcase some of the following skills in use in the 
 Working version of site should look like this at standard screen size:
 ![Site Screenshot](./assets/images/screenshot-ws.png)
 
+Working version of site should look like this with screen size smaller than 992px:
+![Site Screenshot](./assets/images/screenshot-991px.png)
+
 Working version of site should look like this with screen size smaller than 768px:
 ![Site Screenshot](./assets/images/screenshot-767px.png)
+
+Working version of site should look like this with edge case screen size smaller of 320px:
+![Site Screenshot](./assets/images/screenshot-320px.png)
 
 ## License
 
