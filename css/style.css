@@ -22,10 +22,10 @@ html {
   #pageTitle, .heroHeadline, .workHeadline {
     background-color: var(--secondaryColorOP);
   }  
-  #body .nav-link:hover, .btnSkills, .btnContact, .btnAbout, .skillsProgressBar {
+  #body .nav-link:hover, .btnSkills, .btnContact, .btnAbout, .skillsProgressBar, #navText {
     background: var(--secondaryColor);
   }
-  body, .btnSkills:hover, .btnContact:hover, .skillsProgress, .imgHover:hover .workHeadline {
+  body, .btnSkills:hover, .btnContact:hover, .skillsProgress, .imgHover:hover .workHeadline, #navText {
     background: var(--mainColor);
   }
   .btnAbout:hover, .skills {
@@ -40,7 +40,7 @@ html {
   .spinnerColor3, .skills {
     color: var(--mainColor)
   }
-  body, .btnSkills:hover, .btnContact:hover, .heroAbout {
+  body, .btnSkills:hover, .btnContact:hover, .heroAbout, #navText {
     color: var(--white);
   }
 
@@ -138,6 +138,10 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 1;
+}
+
+#navText {
+  display: none;
 }
 
 /* Button styling Note: Hero button and About section buttons use the same class (btnAbout) */
@@ -299,7 +303,7 @@ html {
     ), 
     url("../images/02-portfolio-3.png");
   }
-  .workHeadline {
+  .workHeadline, #navText {
     text-align: left;
     border-bottom: 6px solid var(--secondaryColor);
   }
@@ -352,7 +356,7 @@ html {
     background-position: center;
   }
 
-  .imgHover:hover .workHeadline {
+  .imgHover:hover .workHeadline, #navText {
     text-align: left;
     padding: 10px 10px 10px 10px;
     transition: all 0.3s ease-in-out;
